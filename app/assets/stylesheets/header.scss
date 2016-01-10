@@ -1,0 +1,58 @@
+header {
+  @include font($berthold-medium, 1em, black, Uppercase);
+  letter-spacing: 0.08em;
+
+  .top{
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    .menuheader {
+      //background-color: white;
+      &:nth-child(2) {
+        text-align: left;
+      }
+      &:nth-child(3) {
+        text-align: right;
+      }
+        a {@include link;  }
+
+      }
+
+  }
+
+  .sticky {
+    position: fixed;
+    //width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+
+  .archive {
+    @include link;
+  }
+
+  .menuMobile {
+    margin-left: 47.5%;
+    margin-top: 1.5em;
+    position: fixed;
+
+      ul{
+        -webkit-padding-start: 0px;
+
+        li {
+        list-style-type: none;
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+          -webkit-padding-start: 0px;
+          border: 2px solid black;
+          width: 10em;
+          @include link;
+        }
+      }
+  }
+}

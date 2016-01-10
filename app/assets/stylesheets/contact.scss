@@ -1,0 +1,11 @@
+.contact {
+  p {
+    @include font(helvetica, 1em, black, lowercase);
+    //letter-spacing: 0.05em;
+    &:nth-child(1) {
+      text-transform: uppercase;
+      @include font($berthold-medium, 1em, black, Uppercase);
+      margin-bottom: 1em;
+    }
+  }
+}

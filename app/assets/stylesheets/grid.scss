@@ -1,0 +1,35 @@
+.main_width {
+  width: 80%;
+  border: 1px solid pink;
+  margin: auto;
+}
+
+
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row:before, .row:after {
+  content : "";
+  display : table;
+  clear: both;
+}
+
+[class*="col-"]{
+  float : left;
+  min-height : 1px;
+  width : 8.33%;
+  border: 2px solid black;
+}
+
+@function grid-width($n) {
+  @return $n * $grid-width;
+}
+
+@for $gridIterator from 1 through 12 {
+  .col-#{$gridIterator}{
+    width: grid-width($gridIterator);
+  }
+}

@@ -1,0 +1,15 @@
+@mixin font($fontFamily,$fontSize,$color,$fontCase){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color;
+  text-transform: $fontCase;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  &:hover {
+    color: $blue;
+  }
+}

@@ -1,0 +1,32 @@
+//.gallery {
+//  border: 2px solid pink;
+//
+//  }
+//
+//.swiperSlide {
+//  //height: 30vw;
+//  overflow: hidden;
+//  text-align: center;
+//
+//  img {
+//    width: auto;
+//    vertical-align: middle;
+//    height: calc(100% - 86px);
+//  }
+//}
+
+.project {
+  text-align: center;
+  img {
+    width: 100%;
+    margin: auto;
+    //height: calc(100% - 200px);
+  }
+
+  p{
+    @include font($berthold-medium, 1em, $blue, Uppercase);
+    text-align: left;
+    letter-spacing: 0.08em;
+    padding: 1em 0 2em;
+  }
+}
