@@ -1,7 +1,7 @@
 <header>
   <div class="main-width grid-container sticky_nav">
     <div class="row top">
-      <div class="col-4 menuheader"><a href="index.html" class="maria">Maria Kociszewska</a></div>
+      <div class="col-4 menuheader"><%= link_to "Maria Kociszewska", root_path, class: "maria" %><!-- <a href="index.html" class="maria">Maria Kociszewska</a> --></div>        
       <div class="col-4 menuheader"><a class="archive">Archive</a> <span class="x">&#10005</span></div>
       <div class="menuMobile">
         <ul>
@@ -12,7 +12,7 @@
           <li>All</li>
         </ul>
       </div>
-      <div class="col-4 menuheader"><a href="/">About / Contact</a></div>
+      <div class="col-4 menuheader"><%= link_to "About / Contact", '#' %><!-- <a href="/">About / Contact</a> --></div>
     </div>
   </div>
 </header>
