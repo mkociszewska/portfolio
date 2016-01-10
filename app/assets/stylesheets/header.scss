@@ -9,9 +9,12 @@ header {
     .menuheader {
       //background-color: white;
       &:nth-child(2) {
-        text-align: left;
+        text-align: center;
       }
       &:nth-child(3) {
+        text-align: right;
+      }
+      &:nth-child(4) {
         text-align: right;
       }
         a {@include link;  }
@@ -35,7 +38,7 @@ header {
   }
 
   .menuMobile {
-    margin-left: 47.5%;
+    margin-left: 43%;
     margin-top: 1.5em;
     position: fixed;
 
