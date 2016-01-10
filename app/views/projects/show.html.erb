@@ -1,19 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
+<!--<p>-->
+  <!--<strong>Name:</strong>-->
+  <!--<%= @project.name %>-->
+<!--</p>-->
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+<!--<p>-->
+  <!--<strong>Description:</strong>-->
+  <!--<%= @project.description %>-->
+<!--</p>-->
 
-<p>
-  <strong>Image url:</strong>
-  <%= @project.image_url %>
-</p>
+<!--<p>-->
+  <!--<strong>Image url:</strong>-->
+  <!--<%= @project.image_url %>-->
+<!--</p>-->
 
+
+
+<div class="project_main">
+
+  <div class="grid-container">
+
+    <div class="col-4">
+        <h4 class="project_name"><%= @project.name %></h4>
+        <p class="project_description"><%= @project.description %></p>
+    </div>
+
+    <div class="col-8">
+        <div class="project_images"><%= image_tag @project.image_url %></div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="grid-container">
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
+  </div>

@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
             //$('.cross').show();
             //$(this).hide();
         });
-        $('.x').on('click', function() {
-           $(".menuMobile").hide();
-            $('.x').hide();
+        $('cross').on('click', function() {
+           $(menu).hide();
+            $(cross).hide();
             //$('.hamburger').show();
             //$(this).hide();
 

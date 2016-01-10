@@ -24,9 +24,13 @@
   }
 
   p{
-    @include font($berthold-medium, 1em, $blue, Uppercase);
     text-align: left;
     letter-spacing: 0.08em;
     padding: 1em 0 2em;
+    a {
+      text-decoration: none;
+      @include font($berthold-medium, 1em, $blue, Uppercase);
+
+    }
   }
 }
