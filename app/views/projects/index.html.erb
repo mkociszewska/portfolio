@@ -32,6 +32,6 @@
 
 <section class="projects">
   <% @projects.each do |project| %>
-    <div class="grid-container project"><%= image_tag(project.image_url) %><p><%= project.name %></p></div>
+    <div class="grid-container project"><%= link_to image_tag(project.image_url), project_path(project) %><p><%= link_to project.name, project_path(project) %></p></div>
   <% end %>
 </section>
